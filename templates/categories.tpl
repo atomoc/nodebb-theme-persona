@@ -1,7 +1,7 @@
 <ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 
 	<!-- BEGIN categories -->
-	<li data-cid="{categories.cid}" data-numRecentReplies="{categories.numRecentReplies}" class="row clearfix">
+	<li component="categories/category" data-cid="{categories.cid}" data-numRecentReplies="1" class="row clearfix">
 		<meta itemprop="name" content="{categories.name}">
 
 		<div class="col-md-7 col-sm-9 col-xs-11 content">
