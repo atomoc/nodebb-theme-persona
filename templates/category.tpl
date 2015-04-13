@@ -27,8 +27,7 @@
 		[[category:no_topics]]
 	</div>
 	<!-- ENDIF !topics.length -->
-
-	<p>{name}</p>
+	
 	<!-- IMPORT partials/topics_list.tpl -->
 
 	<!-- IF config.usePagination -->

@@ -31,7 +31,7 @@
 	</script>
 	<script src="{relative_path}/nodebb.min.js?{script-buster}"></script>
 	<!-- IMPORT partials/requirejs-config.tpl -->
-	
+
 	<!-- IF useCustomJS -->
 	{customJS}
 	<!-- ENDIF useCustomJS -->
