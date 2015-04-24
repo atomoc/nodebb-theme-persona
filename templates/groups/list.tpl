@@ -7,14 +7,14 @@
 	<div class="col-lg-8">
 		<div class="col-xs-3 text-left pull-right">
 			<select class="form-control" id="search-sort">
-				<option value="alpha">Group Name</option>
-				<option value="count">Member Count</option>
-				<option value="date">Creation Date</option>
+				<option value="alpha">[[groups:list.sort_groupName]]</option>
+				<option value="count">[[groups:list.sort_memberCount]]</option>
+				<option value="date">[[groups:list.sort_creationDate]]</option>
 			</select>
 		</div>
 		<div class="col-xs-5 text-left pull-right">
 			<div class="input-group">
-				<input type="text" class="form-control" placeholder="Search" name="query" value="" id="search-text">
+				<input type="text" class="form-control" placeholder="[[groups:list.search]]" name="query" value="" id="search-text">
 				<span id="search-button" class="input-group-addon search-button"><i class="fa fa-search"></i></span>
 			</div>
 		</div>

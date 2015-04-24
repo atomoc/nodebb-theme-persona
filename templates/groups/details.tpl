@@ -42,7 +42,7 @@
 						<td>
 							<div class="btn-group pull-right">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									More <span class="caret"></span>
+									[[groups:details.actions]] <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
 									<li>
@@ -82,7 +82,7 @@
 						<td>
 							<div class="btn-group pull-right">
 								<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-									More <span class="caret"></span>
+									[[groups:details.actions]] <span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" role="menu">
 									<li><a href="#" data-ajaxify="false" data-action="accept">[[groups:pending.accept]]</a></li>

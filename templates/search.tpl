@@ -42,8 +42,8 @@
 						<div class="form-group post-search-item">
 							<label>[[search:in-categories]]</label>
 							<select multiple class="form-control" id="posted-in-categories">
-								<option value="all">All Categories</option>
-								<option value="watched">Watched Categories</option>
+								<option value="all">[[search:all-categories]]</option>
+								<option value="watched">[[search:watched-categories]]</option>
 								<!-- BEGIN categories -->
 								<option value="{categories.cid}">{categories.name}</option>
 								<!-- END categories -->
