@@ -1,5 +1,11 @@
 <ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
-
+	
+	<!-- IF content -->
+	<div class="content">
+		{content}
+	</div>
+	<!-- ENDIF content -->
+	
 	<!-- BEGIN categories -->
 	<li component="categories/category" data-cid="{categories.cid}" data-numRecentReplies="1" class="row clearfix">
 		<meta itemprop="name" content="{categories.name}">

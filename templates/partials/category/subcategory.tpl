@@ -49,7 +49,7 @@
 
 					<!-- IF !posts.length -->
 					<div class="post-content">
-						<div class="no_posts">[[category:no_posts]]</div>
+						No new posts.
 					</div>
 					<!-- ENDIF !posts.length -->
 				</div>
