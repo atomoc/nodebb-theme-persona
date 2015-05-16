@@ -2,7 +2,7 @@
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 	
 	<!-- IF content -->
-	<div class="content">
+	<div id="content">
 		{content}
 	</div>
 	<!-- ENDIF content -->
