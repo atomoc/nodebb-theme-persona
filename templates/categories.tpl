@@ -1,7 +1,7 @@
 <ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 	
 	<!-- IF content -->
-	<div class="content">
+	<div id="content">
 		{content}
 	</div>
 	<!-- ENDIF content -->
