@@ -1,6 +1,6 @@
 {
   "name": "nodebb-theme-persona",
-  "version": "0.1.61",
+  "version": "0.2.0",
   "nbbpm": {
     "compatibility": "^0.7.0"
   },
@@ -8,7 +8,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-persona"
+    "url": "git+https://github.com/psychobunny/nodebb-theme-persona.git"
   },
   "keywords": [
     "nodebb",
@@ -37,5 +37,37 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/psychobunny/nodebb-theme-persona/issues"
-  }
+  },
+  "gitHead": "0464bc78ed949c69c3cf57c8ab24f2bde4df5e79",
+  "homepage": "https://github.com/psychobunny/nodebb-theme-persona",
+  "_id": "nodebb-theme-persona@0.2.0",
+  "scripts": {},
+  "_shasum": "e7ca4f13212d77ed51d2f8be4e9b18eceaae64a6",
+  "_from": "nodebb-theme-persona@^0.2.0",
+  "_npmVersion": "2.0.0",
+  "_npmUser": {
+    "name": "julianlam",
+    "email": "julian@designcreateplay.com"
+  },
+  "maintainers": [
+    {
+      "name": "psychobunny",
+      "email": "psycho.bunny@hotmail.com"
+    },
+    {
+      "name": "baris",
+      "email": "barisusakli@gmail.com"
+    },
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    }
+  ],
+  "dist": {
+    "shasum": "e7ca4f13212d77ed51d2f8be4e9b18eceaae64a6",
+    "tarball": "http://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-0.2.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-0.2.0.tgz",
+  "readme": "ERROR: No README data found!"
 }
