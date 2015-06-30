@@ -5,11 +5,9 @@
 		<!-- IMPORT partials/breadcrumbs.tpl -->
 		</div>
 		<div class="pull-right">
-			<!-- IF loggedIn -->
-			<button id="new_topic" class="btn btn-primary">[[category:new_topic_button]]</button>
-			<!-- ELSE -->
+			<!-- IF !loggedIn -->
 			<a href="{config.relative_path}/login" class="btn btn-primary">[[category:guest-login-post]]</a>
-			<!-- ENDIF loggedIn -->
+			<!-- ENDIF !loggedIn -->
 		</div>
 	</div>
 
