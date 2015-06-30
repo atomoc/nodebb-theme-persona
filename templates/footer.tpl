@@ -1,3 +1,8 @@
+	<div class="row">
+		<div class="footer">
+		© Форум <a href="/">Поселки.рф 2015</a></p>
+		</div>
+	</div>
 	</div><!--END container -->
 
 	<div class="hide tpl-500">
