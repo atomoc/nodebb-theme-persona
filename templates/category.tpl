@@ -45,3 +45,9 @@
 <!-- IMPORT partials/move_thread_modal.tpl -->
 <!-- IMPORT partials/noscript/paginator.tpl -->
 <!-- IMPORT partials/variables/category.tpl -->
+
+<div class="row">
+	<div class="footer">
+	© Форум <a href="/">Поселки.рф</a>, 2015</p>
+	</div>
+</div>

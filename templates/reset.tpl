@@ -21,3 +21,9 @@
 		<button class="btn btn-primary btn-block btn-lg" id="reset" type="submit">[[reset_password:reset_password]]</button>
 	</form>
 </div>
+
+<div class="row">
+	<div class="footer">
+	© Форум <a href="/">Поселки.рф</a>, 2015</p>
+	</div>
+</div>

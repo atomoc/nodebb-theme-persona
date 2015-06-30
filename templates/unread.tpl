@@ -38,3 +38,9 @@
 		<button id="load-more-btn" class="btn btn-primary hide">[[unread:load_more]]</button>
 	</div>
 </div>
+
+<div class="row">
+	<div class="footer">
+	© Форум <a href="/">Поселки.рф</a>, 2015</p>
+	</div>
+</div>
