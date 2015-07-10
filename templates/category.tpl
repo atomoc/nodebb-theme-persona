@@ -36,11 +36,7 @@
 		[[category:no_topics]]
 	</div>
 	<!-- ENDIF !topics.length -->
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 4213f33ff011c5846f15a05f7a43605344c8a74c
 	<!-- IMPORT partials/topics_list.tpl -->
 
 	<!-- IF config.usePagination -->
