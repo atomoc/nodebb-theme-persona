@@ -29,8 +29,6 @@
 
 	<hr />
 
-	<p>{name}</p>
-
 	<!-- IF !topics.length -->
 	<div class="alert alert-warning" id="category-no-topics">
 		[[category:no_topics]]
@@ -48,8 +46,4 @@
 <!-- IMPORT partials/noscript/paginator.tpl -->
 <!-- IMPORT partials/variables/category.tpl -->
 
-<div class="row">
-	<div class="footer">
-	© Форум <a href="/">Поселки.рф</a>, 2015</p>
-	</div>
-</div>
+<!-- IMPORT partials/footer.tpl -->
