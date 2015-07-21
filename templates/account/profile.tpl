@@ -25,17 +25,17 @@
 							<!-- ENDIF !config.disableChat -->
  							<a id="follow-btn" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
  							<a id="unfollow-btn" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
-							<!-- ENDIF !isSelf -->
-
-							<!-- IF isAdmin -->
+                            
+                            				<!-- IF isAdmin -->
 							<br/><br/>
 
 							<a id="banAccountBtn" href="#" class="btn btn-danger btn-sm <!-- IF banned -->hide<!-- ENDIF banned -->">[[user:ban_account]]</a>
 							<a id="unbanAccountBtn" href="#" class="btn btn-danger btn-sm <!-- IF !banned -->hide<!-- ENDIF !banned -->">[[user:unban_account]]</a>
 							<a id="deleteAccountBtn" href="#" class="btn btn-danger btn-sm">[[user:delete_account]]</a><br/><br/>
 							<!-- ENDIF isAdmin -->
-						</div>
+							<!-- ENDIF !isSelf -->
 
+						</div>
 
 						<div id="banLabel" class="text-center <!-- IF !banned -->hide<!-- ENDIF !banned -->">
 							<span class="label label-danger">[[user:banned]]</span>
@@ -154,7 +154,7 @@
 
 		<div class="col-md-7">
 		<!-- IF !posts.length -->
-		<span>[[user:has_no_posts]]</span>
+		<div class="alert alert-info">[[user:has_no_posts]]</div>
 		<!-- ENDIF !posts.length -->
 		<!-- IMPORT partials/posts_list.tpl -->
 		</div>
