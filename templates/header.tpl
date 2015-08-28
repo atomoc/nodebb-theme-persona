@@ -77,7 +77,7 @@
 			<ul class="menu-section-list"></ul>
 		</section>
 
-		<!-- IF loggedIn -->
+		<!-- IF config.loggedIn -->
 		<section class="menu-section" data-section="profile">
 			<h3 class="menu-section-title">[[global:header.profile]]</h3>
 			<ul class="menu-section-list" component="header/usercontrol"></ul>
@@ -98,7 +98,7 @@
 			</h3>
 			<ul class="menu-section-list chat-list"></ul>
 		</section>
-		<!-- ENDIF loggedIn -->
+		<!-- ENDIF config.loggedIn -->
 	</nav>
 
 	<main id="panel">
