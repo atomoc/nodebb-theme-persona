@@ -1,9 +1,9 @@
 <div class="topic">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<div class="topic-header" component="post/header" itemprop="name">
+	<h1 component="post/header" itemprop="name">
 
-		<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span class="topic-title" component="topic/title"><h1>{title}</h1></span>
+		<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span class="topic-title" component="topic/title">{title}</span>
 		<!-- IMPORT partials/topic/sort.tpl -->
 
 		<button component="topic/follow" class="btn hidden-xs hidden-sm <!-- IF isFollowing -->hidden<!-- ENDIF isFollowing -->">
@@ -21,7 +21,7 @@
 				<i class="fa fa-users"></i> <span component="topic/browsing/count" class="user-count"></span>
 			</small>
 		</span>
-	</div>
+	</h1>
 
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
@@ -62,7 +62,5 @@
 	<!-- IMPORT partials/paginator.tpl -->
 </noscript>
 <!-- ENDIF !config.usePagination -->
-
-<!-- IMPORT partials/variables/topic.tpl -->
 
 <!-- IMPORT partials/footer.tpl -->

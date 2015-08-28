@@ -13,6 +13,4 @@
 	</div>
 </div>
 
-<!-- IMPORT partials/variables/tag.tpl -->
-
 <!-- IMPORT partials/footer.tpl -->
