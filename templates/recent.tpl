@@ -15,9 +15,7 @@
 
 	<div class="category">
 		<!-- IF !topics.length -->
-		<div class="alert alert-warning" id="category-no-topics">
-			<strong>[[recent:no_recent_topics]]</strong>
-		</div>
+		<div class="alert alert-warning" id="category-no-topics">[[recent:no_recent_topics]]</div>
 		<!-- ENDIF !topics.length -->
 
 		<a href="{config.relative_path}/recent">

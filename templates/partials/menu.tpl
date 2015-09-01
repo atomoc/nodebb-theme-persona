@@ -64,13 +64,13 @@
 					</li>
 				</ul>
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right">
-					<li class="notifications dropdown text-center hidden-xs">
+					<li class="notifications dropdown text-center hidden-xs" component="notifications">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i component="notifications/icon" class="fa fa-fw fa-bell-o" data-content="0"></i>
 						</a>
 						<ul class="dropdown-menu" aria-labelledby="notif_dropdown">
 							<li>
-								<ul id="notif-list">
+								<ul component="notifications/list" class="notification-list">
 									<li>
 										<a href="#"><i class="fa fa-refresh fa-spin"></i> [[global:notifications.loading]]</a>
 									</li>
