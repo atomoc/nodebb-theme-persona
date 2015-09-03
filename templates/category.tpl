@@ -1,12 +1,6 @@
 <div class="category">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 	
-	<!-- IF content -->
-	<div id="content">
-		{content}
-	</div>
-	<!-- ENDIF content -->
-	
 	<!-- IMPORT partials/category/subcategory.tpl -->
 
 	<!-- IF children.length --><hr /><!-- ENDIF children.length -->
