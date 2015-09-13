@@ -1,3 +1,4 @@
+<!-- IMPORT partials/breadcrumbs.tpl -->
 <!-- IF content -->
 	<div id="content">
 		{content}
