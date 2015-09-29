@@ -2,7 +2,7 @@
 	h1 {
 		line-height: 40px;
 		margin-bottom: 30px;
-		
+
 		.topic-title {
 			font-size: 28px;
 			color:inherit;
@@ -62,6 +62,19 @@
 		right: 25px;
 	}
 
+	.bookmarked {
+		position: absolute;
+		top: 1px;
+		padding-top: 3px;
+		border-radius: 4px;
+		right: 72px;
+		font-size: 10px;
+		padding-bottom: 4px;
+		background: darken(@brand-info, 20%);
+		opacity: 0;
+		.transition(0.75s ease-in-out opacity);
+	}
+
 	[component="post/upvote"], [component="post/downvote"] {
 		color: @gray-light;
 	}
@@ -108,9 +121,10 @@
 
 	.post-tools {
 		text-transform: lowercase;
-		:before {
+		a::before {
 			content: "\2022\0020";
 		}
+
 		a {
 			.pointer;
 		}
@@ -236,6 +250,10 @@
 			&.highlight > hr {
 				border-color: darken(@brand-info, 20%);
 				box-shadow: 0px 0px 1px @brand-info;
+			}
+
+			&.highlight .bookmarked {
+				opacity: 1;
 			}
 		}
 

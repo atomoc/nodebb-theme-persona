@@ -4,7 +4,7 @@
 		{content}
 	</div>
 <!-- ELSE -->
-<h1 class="categories-title">[[category:categories]]</h1>
+<h1 class="categories-title">[[pages:categories]]</h1>
 <!-- ENDIF content -->
 <ul class="categories" itemscope itemtype="http://www.schema.org/ItemList">
 	<!-- BEGIN categories -->
