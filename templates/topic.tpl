@@ -1,11 +1,7 @@
 <div class="topic">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
-	<h1 component="post/header" class="hidden-xs" itemprop="name">
-
-		<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <span class="topic-title" component="topic/title">{title}</span>
-
-
+	<div component="post/header" class="hidden-xs" itemprop="name">
 		<span class="browsing-users hidden hidden-xs hidden-sm pull-right">
 			<span>[[category:browsing]]</span>
 			<div component="topic/browsing/list" class="thread_active_users active-users inline-block"></div>
@@ -13,7 +9,9 @@
 				<i class="fa fa-users"></i> <span component="topic/browsing/count" class="user-count"></span>
 			</small>
 		</span>
-	</h1>
+		
+		<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <h1 class="topic-title" component="topic/title">{title}</h1>
+	</div>
 
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
 
