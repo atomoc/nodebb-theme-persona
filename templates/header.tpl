@@ -65,7 +65,7 @@
     <!-- /Yandex.Metrika counter -->
 </head>
 
-<body>
+<body class="{bodyClass}">
 	<nav id="menu" class="hidden">
 		<section class="menu-profile">
 			<img src="{user.picture}"/>
@@ -107,5 +107,5 @@
 				<!-- IMPORT partials/menu.tpl -->
 			</div>
 		</nav>
-		<div class="container" id="content" component="header">
+		<div class="container" id="content">
 		<!-- IMPORT partials/noscript/warning.tpl -->

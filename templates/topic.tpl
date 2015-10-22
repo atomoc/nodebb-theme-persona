@@ -1,7 +1,9 @@
-<div class="topic">
+<div class="row">
+<div class="topic col-lg-12">
 	<!-- IMPORT partials/breadcrumbs.tpl -->
 
 	<div component="post/header" class="hidden-xs" itemprop="name">
+
 		<span class="browsing-users hidden hidden-xs hidden-sm pull-right">
 			<span>[[category:browsing]]</span>
 			<div component="topic/browsing/list" class="thread_active_users active-users inline-block"></div>
@@ -10,7 +12,7 @@
 			</small>
 		</span>
 		
-		<i class="fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <h1 class="topic-title" component="topic/title">{title}</h1>
+		<i class="pull-left fa fa-thumb-tack <!-- IF !pinned -->hidden<!-- ENDIF !pinned -->"></i> <i class="pull-left fa fa-lock <!-- IF !locked -->hidden<!-- ENDIF !locked -->"></i> <h1 class="topic-title" component="topic/title">{title}</h1>
 	</div>
 
 	<div component="topic/deleted/message" class="alert alert-warning<!-- IF !deleted --> hidden<!-- ENDIF !deleted -->">[[topic:deleted_message]]</div>
@@ -59,7 +61,7 @@
 	</div>
 
 </div>
-
+</div>
 <!-- IF !config.usePagination -->
 <noscript>
 	<!-- IMPORT partials/paginator.tpl -->
