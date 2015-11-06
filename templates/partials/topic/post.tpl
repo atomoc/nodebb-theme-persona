@@ -1,20 +1,26 @@
 <div class="clearfix">
 	<div class="icon pull-left">
 		<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->">
-			<img src="{posts.user.picture}" align="left" itemprop="image" />
-			<!-- IF posts.user.banned -->
-			<span class="label label-danger">[[user:banned]]</span>
-			<!-- ENDIF posts.user.banned -->
+			<!-- IF posts.user.picture -->
+			<img component="user/picture" data-uid="{posts.user.uid}" src="{posts.user.picture}" align="left" itemprop="image" />
+			<!-- ELSE -->
+			<div component="user/picture" data-uid="{posts.user.uid}" class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
+			<!-- ENDIF posts.user.picture -->
+			<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
+
 		</a>
 	</div>
 
 	<small class="pull-left">
-		<i component="user/status" class="fa fa-circle status {posts.user.status}" title="[[global:{posts.user.status}]]"></i>
 		<strong>
 			<a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
 		</strong>
 
 		<!-- IMPORT partials/topic/badge.tpl -->
+
+		<!-- IF posts.user.banned -->
+		<span class="label label-danger">[[user:banned]]</span>
+		<!-- ENDIF posts.user.banned -->
 
 		<div class="visible-xs-inline-block visible-sm-inline-block visible-md-inline-block visible-lg-inline-block">
 			<a class="permalink" href="{config.relative_path}/topic/{slug}/{function.getBookmarkFromIndex}"><span class="timeago" title="{posts.relativeTime}"></span></a>

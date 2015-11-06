@@ -1,13 +1,18 @@
-<!-- IMPORT partials/breadcrumbs.tpl -->
-
-<div component="groups/container" class="details row">
-	<div class="col-xs-12" component="groups/cover" style="background-origin: content-box; background-image: url({group.cover:url}); background-position: {group.cover:position};">
-		<div class="change">[[groups:cover-change]] <i class="fa fa-fw fa-pencil-square-o"></i></div>
+<div component="groups/container" class="groups details row">
+	<div component="groups/cover" style="background-image: url({group.cover:url}); background-position: {group.cover:position};">
+		<div class="controls">
+			<span class="upload"><i class="fa fa-fw fa-4x fa-upload"></i></span>
+			<span class="resize"><i class="fa fa-fw fa-4x fa-arrows"></i></span>
+		</div>
 		<div class="save">[[groups:cover-save]] <i class="fa fa-fw fa-floppy-o"></i></div>
 		<div class="indicator">[[groups:cover-saving]] <i class="fa fa-fw fa-refresh fa-spin"></i></div>
-		<div class="instructions">[[groups:cover-instructions]]</div>
 	</div>
-	<div class="col-lg-6 col-xs-12">
+
+	<div class="col-xs-12">
+		<!-- IMPORT partials/breadcrumbs.tpl -->
+	</div>
+
+	<div class="col-lg-4 col-xs-12">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 				<h3 class="panel-title">
@@ -65,7 +70,11 @@
 					<!-- BEGIN pending -->
 					<tr data-uid="{group.pending.uid}">
 						<td>
-							<a href="{config.relative_path}/user/{group.pending.userslug}"><img src="{group.pending.picture}" /></a>
+							<!-- IF group.members.picture -->
+							<a href="{config.relative_path}/user/{group.members.userslug}"><img src="{group.members.picture}" /></a>
+							<!-- ELSE -->
+							<div class="user-icon" style="background-color: {group.members.icon:bgColor};">{group.members.icon:text}</div>
+							<!-- ENDIF group.members.picture -->
 						</td>
 						<td class="member-name">
 							<a href="{config.relative_path}/user/{group.pending.userslug}">{group.pending.username}</a>
@@ -93,7 +102,11 @@
 				</h3>
 			</div>
 			<div class="panel-body">
-				<input class="form-control" type="text" component="groups/members/invite" placeholder="[[groups:invited.search]]"/><br/>
+				<div class="input-group">
+					<input class="form-control" type="text" component="groups/members/invite" placeholder="[[groups:invited.search]]"/>
+					<span class="input-group-addon search-button"><i class="fa fa-search"></i></span>
+				</div><br />
+				
 				<table component="groups/invited" class="table table-striped table-hover">
 					<!-- IF !group.invited.length -->
 					<div class="alert alert-info">[[groups:invited.none]]</div>
@@ -101,7 +114,11 @@
 					<!-- BEGIN invited -->
 					<tr data-uid="{group.invited.uid}">
 						<td>
+							<!-- IF group.invited.picture -->
 							<a href="{config.relative_path}/user/{group.invited.userslug}"><img src="{group.invited.picture}" /></a>
+							<!-- ELSE -->
+							<div class="user-icon" style="background-color: {group.invited.icon:bgColor};">{group.invited.icon:text}</div>
+							<!-- ENDIF group.invited.picture -->
 						</td>
 						<td class="member-name">
 							<a href="{config.relative_path}/user/{group.invited.userslug}">{group.invited.username}</a>
@@ -121,11 +138,7 @@
 				</table>
 			</div>
 		</div>
-		<!-- ENDIF group.isOwner -->
-		<div widget-area="left"></div>
-	</div>
-	<div class="col-lg-6 col-xs-12">
-		<!-- IF group.isOwner -->
+
 		<div class="panel panel-default">
 			<div class="panel-heading pointer" data-toggle="collapse" data-target=".options">
 				<h3 class="panel-title">
@@ -195,8 +208,10 @@
 			</div>
 		</div>
 		<!-- ENDIF group.isOwner -->
-
-		<div>
+		<div widget-area="left"></div>
+	</div>
+	<div class="col-lg-8 col-xs-12">
+		<div class="col-lg-11">
 			<!-- IF !posts.length -->
 			<div class="alert alert-info">[[groups:details.has_no_posts]]</div>
 			<!-- ENDIF !posts.length -->
