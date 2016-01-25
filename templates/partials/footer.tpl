@@ -1,6 +1,6 @@
 <div class="row">
 	<!--LiveInternet counter--><script type="text/javascript">jQuery(function($){$('.footer').append("<a href='//www.liveinternet.ru/click' target=_blank><img src='//counter.yadro.ru/hit?t14.1;r" + escape(document.referrer) + ((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth)) + ";u" + escape(document.URL) +";h"+escape(document.title.substring(0,80)) +  ";" + Math.random() + "' border=0 width=88 height=31 alt='' title='LiveInternet: показано число просмотров за 24 часа, посетителей за 24 часа и за сегодня'><\/a>")});</script><!--/LiveInternet-->
 	<div class="footer">
-		© Форум <a href="/">Поселки.рф</a>, 2015</p>
+		© Форум <a href="/">Поселки.рф</a>, 2016</p>
 	</div>
 </div>
